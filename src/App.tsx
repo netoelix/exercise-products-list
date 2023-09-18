@@ -1,8 +1,9 @@
 import './App.css';
+import ProductsList from './components/products-list';
 
 function App() {
   return (
-    <h1>Exercise</h1>
+    <ProductsList />
   );
 }
 
