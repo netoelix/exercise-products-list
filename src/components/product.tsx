@@ -16,7 +16,7 @@ type ProductProps = {
 function Product({ productInfo }: ProductProps) {
   const { title, price, image } = productInfo;
   return (
-    <li>
+    <li className="product">
       <h2>{title}</h2>
       <img src={ image } alt={ title } />
       <p>{price}</p>

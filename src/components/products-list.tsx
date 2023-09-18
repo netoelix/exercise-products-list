@@ -1,16 +1,15 @@
-import Product from './product';
-import products from '../data';
+type ProductListProps = {
+  children: React.ReactNode;
+};
 
-function ProductsList() {
+function ProductsList({ children }: ProductListProps) {
   return (
-    <>
+    <main>
       <h1>Lista de produtos</h1>
-      <ul>
-        {products.map((item) => (
-          <Product productInfo={ item } key={ item.id } />
-        ))}
+      <ul className="product-list">
+        {children}
       </ul>
-    </>
+    </main>
   );
 }
 
